@@ -19,9 +19,12 @@ DS4002PROJECT3
   - `images_per_class.png`: Bar chart of number of images for each species (cat and dog)
   - `images_per_species.png`: Bar chart of number of images for each breed (37 total)
   - `species_confusion_matrix.png`: Confusion matrix of the CNN's performance in classifying cat vs. dog images
+  - `species_confusion_matrix.png`: Formatted Markdown file summarizing and interpreting the results of the analysis
 - 📁 SCRIPTS Folder
   - `0_processing.py`: Initial processing script to parse image annotations and generate exploratory plots
+  - `1_cnn.py`: full CNN training pipeline (baseline model, augmented model, and 37-class model) 
 
 ## How to Reproduce Results
 You can run the project in two steps:  
 - `0_processing.py`: preprocessing and preliminary visualization of data
+- `1_cnn.py`: trains the binary CNN (cat vs. dog), trains the augmented CNN, trains the 37-class breed CNN, and generates confusion matrices and evalution metrics
